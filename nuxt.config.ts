@@ -7,6 +7,8 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "shadcn-nuxt",
     "@formkit/auto-animate/nuxt",
+    "@nuxtjs/tailwindcss", 
+    "shadcn-nuxt",
   ],
   shadcn: {
     /**

@@ -1,6 +1,19 @@
+<script setup lang="ts">
+const router = useRouter()
+
+const nav = [
+  { label: 'Home', to: '/' },
+  { label: 'Dashboard', to: '/dashboard' },
+  { label: 'Parent (index)', to: '/parent' },
+  { label: 'Parent (b)', to: '/parent/b' },
+  { label: 'Keyed child', onClick: () => router.push(`/parent/reload-${(Math.random() * 100).toFixed()}`) },
+  { label: 'Non-Keyed child', onClick: () => router.push(`/parent/static-${(Math.random() * 100).toFixed()}`) },
+]
+</script>
+
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
-  </div>
+  <NuxtExample dir="routing/pages" :nav="nav" current-route>
+    <NuxtLoadingIndicator />
+    <NuxtPage />
+  </NuxtExample>
 </template>
