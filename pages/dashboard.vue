@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col min-h-screen bg-gray-100">
-    <!-- Header -->
-    <header class="bg-white shadow-md">
+    
+    <!-- <header class="bg-white shadow-md">
       <div class="mx-2 p-3 flex justify-between items-center">
         <h1 class="text-2xl font-semibold text-gray-800">Dashboard</h1>
         <div class="flex space-x-4">
@@ -13,7 +13,7 @@
           </button>
         </div>
       </div>
-    </header>
+    </header> -->
 
     <!-- Main Content -->
     <main class="flex-1 p-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
